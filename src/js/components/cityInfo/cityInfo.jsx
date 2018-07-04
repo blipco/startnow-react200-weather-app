@@ -28,5 +28,5 @@ export default class CityInfo extends React.Component {
         </div>
       </div>
     );
-  }
-}
+  };
+};
