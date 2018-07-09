@@ -12,8 +12,8 @@ export default class SearchHistory extends React.Component {
             <table className='table table-striped'>
               <tbody>
                 <tr>
-                  <td scope='col'>dsfg</td>
-                  <td scope='col'>asga</td>
+                  <td scope='col'>A</td>
+                  <td scope='col'>A</td>
                 </tr>
               </tbody>
             </table>
