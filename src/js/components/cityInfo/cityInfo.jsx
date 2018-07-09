@@ -15,13 +15,30 @@ export default class CityInfo extends React.Component {
             <hr/>
             <div className='row'>
               <div className='col-4'>
-                a
+                <p className='font-weight-bold text-center'>Temperature (F)</p>
+                <p className='text-center'>A</p>
               </div>
               <div className='col-4'>
-                a
+                <p className='font-weight-bold text-center'>Pressure</p>
+                <p className='text-center'>A</p>
               </div>
               <div className='col-4'>
-                a
+                <p className='font-weight-bold text-center'>Humidity</p>
+                <p className='text-center'>A</p>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-4'>
+                <p className='font-weight-bold text-center'>Lowest Temp(F)</p>
+                <p className='text-center'>A</p>
+              </div>
+              <div className='col-4'>
+                <p className='font-weight-bold text-center'>Highest Temp(F)</p>
+                <p className='text-center'>A</p>
+              </div>
+              <div className='col-4'>
+                <p className='font-weight-bold text-center'>Wind Speed</p>
+                <p className='text-center'>A</p>
               </div>
             </div>
           </div>
