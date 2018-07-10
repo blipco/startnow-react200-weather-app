@@ -1,7 +1,7 @@
 import React from 'react';
-import CityInfo from './components/cityInfo/cityInfo';
-import SearchBar from './components/searchBar/searchBar';
-import SearchHistory from './components/searchHistory/searchHistory';
+import CityInfo from './components/cityInfo';
+import SearchBar from './components/searchBar';
+import SearchHistory from './components/searchHistory';
 import Tabs from './components/tabs/tabs';
 
 export default class App extends React.Component {

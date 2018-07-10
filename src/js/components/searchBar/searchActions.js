@@ -1,6 +1,6 @@
-export function updateSearch(search) {
+export function updateSearch(userQuery) {
   return {
     type: 'UPDATE_SEARCH',
-    payload: {search}
+    payload: {userQuery}
   };
 };

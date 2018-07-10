@@ -1,5 +1,5 @@
 const defaultState = {
-search : ''
+userQuery : ''
 };
 
 export default function searchReducer(state = defaultState, action) {
@@ -8,9 +8,12 @@ export default function searchReducer(state = defaultState, action) {
   switch (type) {
     case 'UPDATE_SEARCH' : {
       return {
-        search: payload.search
+        userQuery: payload.userQuery
       }
     }
-  }
+    default: {
+      return state;
+    };
+  };
 
 };
