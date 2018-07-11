@@ -2,7 +2,7 @@ import React from 'react';
 import CityInfo from './components/cityInfo';
 import SearchBar from './components/searchBar';
 import SearchHistory from './components/searchHistory';
-import Tabs from './components/tabs/tabs';
+import Tabs from './components/tabs';
 
 export default class App extends React.Component {
   render() {

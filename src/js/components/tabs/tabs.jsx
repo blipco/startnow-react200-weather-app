@@ -1,4 +1,9 @@
 import React from 'react';
+import {updateSanDiego, 
+        updateNewYork, 
+        updateWashington, 
+        updatePhoenix, 
+        updateLa} from './tabsActions';
 
 export default class Tabs extends React.Component {
   constructor(props) {
@@ -11,35 +16,50 @@ export default class Tabs extends React.Component {
     this.clickLa = this.clickLa.bind(this);
   }
 
-  clickSanDiego(e) {
-
+  clickSanDiego () {
+    const {dispatch} = this.props;
+    dispatch(updateSanDiego());
   };
 
-  clickNewYork (e) {
-
+  clickNewYork () {
+    const {dispatch} = this.props;
+    dispatch(updateNewYork());
   };
 
-  clickWashington (e) {
-
+  clickWashington () {
+    const {dispatch} = this.props;
+    dispatch(updateWashington());
   };
 
-  clickPhoenix (e) {
-
+  clickPhoenix () {
+    const {dispatch} = this.props;
+    dispatch(updatePhoenix());
   };
 
-  clickLa (e) {
-
+  clickLa () {
+    const {dispatch} = this.props;
+    dispatch(updateLa());
   };
   
   render() {
     return (
 
       <div className="btn-group" role="group">
-        <button onClick={this.clickSanDiego} type="button" className="btn btn-primary">San Diego</button>
-        <button onClick={this.clickNewYork} type="button" className="btn btn-primary">New York</button>
-        <button onClick={this.clickWashington} type="button" className="btn btn-primary">Washington D.C</button>
-        <button onClick={this.clickPhoenix} type="button" className="btn btn-primary">Phoenix</button>
-        <button onClick={this.clickLa} type="button" className="btn btn-primary">Los Angeles</button>
+        <button onClick={this.clickSanDiego} type="button" className="btn btn-primary">
+          San Diego
+        </button>
+        <button onClick={this.clickNewYork} type="button" className="btn btn-primary">
+          New York
+        </button>
+        <button onClick={this.clickWashington} type="button" className="btn btn-primary">
+          Washington D.C
+          </button>
+        <button onClick={this.clickPhoenix} type="button" className="btn btn-primary">
+          Phoenix
+        </button>
+        <button onClick={this.clickLa} type="button" className="btn btn-primary">
+          Los Angeles
+        </button>
       </div>
     );
   }

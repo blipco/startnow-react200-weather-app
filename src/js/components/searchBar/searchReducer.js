@@ -40,6 +40,36 @@ export default function searchReducer(state = defaultState, action) {
         weatherInfo: payload
       }
     }
+    case 'UPDATE_SAN_DIEGO_FULFILLED' : {
+      return {
+        ...state,
+        weatherInfo: payload
+      };
+    };
+    case 'UPDATE_NEW_YORK_FULFILLED' : {
+      return {
+        ...state,
+        weatherInfo: payload
+      };
+    };
+    case 'UPDATE_WASHINGTON_FULFILLED' : {
+      return {
+        ...state,
+        weatherInfo: payload
+      };
+    };
+    case 'UPDATE_PHOENIX_FULFILLED' : {
+      return {
+        ...state,
+        weatherInfo: payload
+      };
+    };
+    case 'UPDATE_LA_FULFILLED' : {
+      return {
+        ...state,
+        weatherInfo: payload
+      };
+    };
     default: {
       return state;
     };

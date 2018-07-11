@@ -18,6 +18,7 @@ export default class SearchBar extends React.Component {
   clickSearchButton() {
   const {dispatch} = this.props;
   const {userQuery} = this.props;
+  console.log(this.props)
   dispatch(updateWeatherInfo(userQuery));
   };
 

@@ -4,7 +4,7 @@ import tabsReducer from './components/tabs/tabsReducer';
 
 const rootReducer = combineReducers({
 search: searchReducer,
-tabs: tabsReducer
+//tabs: tabsReducer
 });
 
 export default rootReducer;
