@@ -5,7 +5,7 @@ import cityInfo from './cityInfo';
 // that's passed to the props of the component.
 function mapStoreToProps(store) {
   return {
-    userQuery : store.search.userQuery  
+    weatherInfo: store.search.weatherInfo
   };
 }
 

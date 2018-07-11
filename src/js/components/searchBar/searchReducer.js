@@ -1,5 +1,27 @@
 const defaultState = {
-userQuery : ''
+userQuery : '',
+weatherInfo: {
+  data: {
+    name: '',
+    coord: {
+      lat: '',
+      lon: ''
+    },
+    main: {
+      humidity: '',
+      pressure: '',
+      temp_max: '',
+      temp_min: '',
+      temp: '',
+    },
+    weather: [{
+      icon: ''
+    }],
+    wind: {
+      speed: ''
+    }
+  }
+}
 };
 
 export default function searchReducer(state = defaultState, action) {
@@ -8,7 +30,14 @@ export default function searchReducer(state = defaultState, action) {
   switch (type) {
     case 'UPDATE_SEARCH' : {
       return {
-        userQuery: payload.userQuery
+        ...state,
+        userQuery: payload
+      }
+    }
+    case 'UPDATE_WEATHER_INFO_FULFILLED' : {
+      return {
+        ...state,
+        weatherInfo: payload
       }
     }
     default: {
