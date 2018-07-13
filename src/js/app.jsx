@@ -9,20 +9,24 @@ export default class App extends React.Component {
     return (
       <div className='container'>
         <div className='jumbotron'>
-          <h2 className='display-2 p-4'>Origin Weather Application</h2>
-          <h6 className='lead p-4'>Always Know If You'll Need An Umbrella!</h6>
+          <h2 className='display-2 p-4'>
+            Origin Weather Application
+          </h2>
+          <h6 className='lead p-4'>
+            Always Know If You'll Need An Umbrella!
+          </h6>
         </div>
-        <Tabs/>
-        <SearchBar/>
+        <Tabs />
+        <SearchBar />
         <div className='row'>
           <div className='col-6'>
-            <CityInfo/>
+            <CityInfo />
           </div>
           <div className='col-6'>
-            <SearchHistory/>
+            <SearchHistory />
           </div>
         </div>
       </div>
     );
-  }
-}
+  };
+};

@@ -1,5 +1,5 @@
 import React from 'react';
-import {updateSearch, updateWeatherInfo} from './searchActions';
+import { updateSearch, updateWeatherInfo, updateHistory } from './searchActions';
 
 export default class SearchBar extends React.Component {
   constructor(props) {
@@ -16,23 +16,29 @@ export default class SearchBar extends React.Component {
   };
 
   clickSearchButton() {
-  const {dispatch} = this.props;
-  const {userQuery} = this.props;
-  console.log(this.props)
-  dispatch(updateWeatherInfo(userQuery));
+    const { dispatch } = this.props;
+    const { userQuery } = this.props;
+    dispatch(updateWeatherInfo(userQuery));
+    dispatch(updateHistory(userQuery));
+
   };
 
   render() {
-    const {userQuery} = this.props;
+    const { userQuery } = this.props;
     return (
       <div>
         <div className="input-group input-group-sm">
-          <input value={userQuery} onChange={this.changeSearchBar} className="form-control mb-3"/>
+          <input value={userQuery} 
+                 onChange={this.changeSearchBar} 
+                 className="form-control mb-3" />
           <div className="input-group-append">
-            <button onClick={this.clickSearchButton} className="input-group-text mb-3">Go!</button>
+            <button onClick={this.clickSearchButton} 
+                    className="input-group-text mb-3">
+                    Go!
+            </button>
           </div>
         </div>
       </div>
     );
-  }
-}
+  };
+};

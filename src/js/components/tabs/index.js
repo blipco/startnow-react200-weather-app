@@ -5,7 +5,8 @@ import tabs from './tabs';
 // that's passed to the props of the component.
 function mapStoreToProps(store) {
   return {
-    weatherInfo: store.search.weatherInfo
+    weatherInfo: store.search.weatherInfo,
+    userQuery: store.search.userQuery
   };
 }
 
