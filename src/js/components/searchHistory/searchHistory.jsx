@@ -10,7 +10,7 @@ export default class SearchHistory extends React.Component {
                id='search-card-header'>
             Search History
           </div>
-          <div className='card-body'>
+          <div className='card-body' id='search-history-body'>
             <table className='table table-striped'>
               <tbody>
                 {this.props.history.map(historyItem => (

@@ -21,6 +21,7 @@ export function updateWeatherInfo(userQuery) {
       url: `${weather}${userQuery}${farenheit}${key}`
     })
       .then(response => {
+        
         return response;
       })
       .catch((err) => console.log(err))
